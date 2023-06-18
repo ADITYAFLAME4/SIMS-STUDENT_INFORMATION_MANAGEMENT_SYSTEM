@@ -1,0 +1,628 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SUBJECT</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" type="text/css" href="css/demo.css" />
+
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+    integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+    <!-- Font Awesome Icons -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
+    <!-- Google Fonts -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@600;700&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="style.css" />
+    <style>
+  * {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+html {
+  font-size: 62.5%;
+}
+*:not(i) {
+  font-family: "Poppins", sans-serif;
+}
+header {
+
+  width: 100%;
+  background-color: #ff0202;
+  padding: 3rem 5rem;
+  color: gold;
+}
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 2rem;
+  color: rgb(255, 255, 255);
+
+}nav  a{
+  color: rgb(255, 255, 255);
+}
+nav a {
+  font-size: 1.8rem;
+  text-decoration: none;
+}
+
+nav ul a {
+  color: #ffffff;
+  font-weight: 600;
+}
+nav ul a:hover {
+  border-bottom: 2px solid #ffffff;
+}
+section#home {
+  height: 100vh;
+  display: flex;
+
+}
+h1 {
+  font-size: 4rem;
+}
+#ham-menu {
+  display: none;
+}
+nav ul.active {
+  left: 0;
+}
+@media only screen and (max-width: 991px) {
+  html {
+    font-size: 56.25%;
+  }
+  header {
+    padding: 2.2rem 5rem;
+  }
+}
+@media only screen and (max-width: 767px) {
+  html {
+    font-size: 50%;
+  }
+  #ham-menu {
+    display: block;
+    color: #ffffff;
+  }
+  nav a#logo,
+  #ham-menu {
+    font-size: 3.2rem;
+  }
+  nav ul {
+   
+    background-color: rgba(22, 13, 13, 0.692);
+    transition: all 0.3s ease-in;
+    overflow-y: hidden;
+    position:absolute;
+    overflow: hidden;
+    left: -100vw;
+    top: 73.6px;
+    width: 50%;
+    height: calc(100vh - 73.6px);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    transition: 1s;
+    gap: 0;
+  }
+}
+@media only screen and (max-width: 575px) {
+  html {
+    font-size: 46.87%;
+  }
+  header {
+    padding: 2rem 3rem;
+  }
+  nav ul {
+    top: 65.18px;
+    height: calc(100vh - 65.18px);
+  }
+}
+
+
+  
+.system h2{
+     
+  scrollbar-color: red;
+  color:red;
+   font-size: 40px;
+   font-family: 'Times New Roman';
+   padding-left: 10px;
+   margin-top: 9%;
+   letter-spacing: 2px;
+
+}
+@media only screen and (max-width:500px) {
+
+body{
+  margin: auto;
+ 
+}
+.system h2 {
+  margin: auto;
+  font-size: 35px;
+
+  width: 90%;
+}
+.ppp{
+  width: 80%;
+  margin: auto;
+display: none;
+}
+.st{
+  margin: auto;
+}.paa{
+  margin-top: 10px;
+}
+.paa{
+  width: 80%;
+  margin: auto;
+}
+.aab{
+  width: 300px;
+  height: 300px;
+  margin: auto;
+  margin-left: 40px;
+}
+
+.aab img {
+  width: 100%;
+  height: 100%;
+  margin-top: 200px;
+
+}
+.footer1{
+  width: 370px;
+  height: 260px;
+  margin:auto;
+ margin-left: 2px;
+ }
+ .footer2{
+
+ }
+ .placement1{
+  width: 90%;
+  margin: auto;
+ }
+ 
+}     .body{
+ 
+  background-position: center center;
+background-repeat: no-repeat;
+background-attachment: fixed;
+background-size: cover;
+}
+
+.a_demo_two {
+	background-color:#6fba26;
+	padding:30px; 
+	position:relative;
+	font-family: 'Open Sans', sans-serif;
+	font-size:12px;
+	text-decoration:none;
+	color:rgb(255, 255, 255);
+    width: 210px;
+    margin-top: 30px;
+    font-size: 18px;
+    margin-left: 100PX;
+   
+    background-color: rgba(255, 19, 19, 0.692);
+    transition: all 0.3s ease-in;
+    overflow-y: hidden;
+	box-shadow: inset 0px 1px 0px #000000, 0px 6px 0px #091101;
+	border-radius: 5px;
+}
+
+.a_demo_two:active {
+	top:7px;
+	background-image: linear-gradient(bottom, rgb(100,170,30) 100%, rgb(129,212,51) 0%);
+	box-shadow: inset 0px 1px 0px #b2f17f, inset 0px -1px 0px #3d6f0d;
+	color: #156785;
+	text-shadow: 0px 1px 1px rgba(255,255,255,0.3);
+	background: rgb(240, 6, 64);
+}
+@media screen and (max-width: 500px) {
+    .a_demo_two{
+        margin: auto;
+       
+        margin-top: 15px;
+    }
+}
+
+#slider{
+  margin:0 auto;
+  width:100%;
+  height: 500px;
+  overflow:hidden;
+  
+  background: rgb(230, 230, 230);
+  }
+  .img1{
+  width:100%;
+  height: 500px;
+  }
+  
+  @media (max-width:567px){
+  #slider{
+    width:100%;
+
+  height: 50%;
+  
+  }
+  .img1{
+    height: 200px;
+  }
+  }
+  .select{
+    height: 100px;
+    width: 32%;
+    border: 2px solid transparent;
+  }
+  
+  
+
+
+
+
+.aab{
+  width: 30%;
+  float: left;
+  height: 100%;
+ 
+  border: 2px solid transparent(12, 233, 174);
+}
+.partd{
+  padding: 10px;
+  border: 2px solid black;
+  height: 400px;
+}
+
+.inbox{ color: aliceblue;
+font-size: 18PX;
+height: 50px;
+width: 80%;
+background-color: rgb(219, 18, 18);
+border-radius: 10PX;
+margin: 20px auto;
+border: 2px solid black;
+}
+
+.partd{
+padding: 10px;
+}
+.aab{
+width: 300px;
+height: 300px;
+margin: auto;
+margin-left: 40px;
+}
+
+@media only screen and (max-width:500px) {
+/* For tablets: */
+.partc {
+width: 80%;
+
+align-items: center;
+margin-top: 10px;
+}}
+
+@media only screen and (max-width:500px) {
+  /* For tablets: */
+  .middle1 h2{
+    font-size: 20px;
+    color: #f70808;
+    margin-top: 20px;
+  }
+  .partc {
+  width: 80%;
+  
+  align-items: center;
+  margin-top: 10px;
+  }
+  .system h2{
+    font-size: 22px;
+  }
+  
+  .second1 p{
+  
+    font-size: 5px;
+  }
+  .secondpart{
+    font-size: 5px;
+  }
+  .second1{
+    width: 100%;
+  }
+  
+  }
+  
+  
+  .secondpart{
+  height: 400px;
+  width: auto;
+  background-color: #ffffff;
+  }
+  .second1{
+    height: 400px;
+    width: 70%;
+   margin: auto;
+    background-color: #ffffff;
+  
+  }
+      body {
+  /* Image Location */
+  background-image: url("img/abacus.jpg");
+
+
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  background-color: #f8f8f8;
+  /* Font Colour */
+  color:white;
+}
+nav a#logo {
+  color: #ffffff;
+  font-weight: 700;
+
+}
+    </style>
+  </head>
+  <body>
+    <header>
+      <nav style="color:rgb(255, 255, 255);">
+        <a href="#home" id="logo" style="font-size: 28px;"><B>TECHNO INDIA GROUP</B></a>
+        <i class="fas fa-bars" id="ham-menu"></i>
+        <ul id="nav-bar" >
+          <li >
+            <a href="logout.php" style="color:rgb(255, 255, 255); font-size: 25px;">Home</a>
+          </li>
+      
+        
+          <li>
+            <a href="https://www.technoindiagroup.com/" ><img src="img/t.png" alt="Avatar" style="width:45px;  border-radius: 50%;"></a>
+          </li>
+          <li>
+            <a  href="http://makautexam.net/"><img src="img/makaut.png" alt="Avatar" style="width:45px;  border-radius: 50%;"></a>
+          </li>
+          <li>
+            <a href="#contact"><i class='fas fa-volume-up' style='font-size:32px;color:rgb(0, 0, 0)' onclick="playAudio()" class="song"></i></a>
+          </li>
+                
+    <audio id="myAudio">
+      <source src="song.mp3" type="audio/ogg">
+    
+    
+    </audio><script>
+    var x = document.getElementById("myAudio"); 
+    
+    function playAudio() { 
+      x.play(); 
+    } 
+    
+    function pauseAudio() { 
+      x.pause(); 
+    } 
+    </script>
+        </ul>
+      </nav>
+    </header>
+
+
+    <div class="body">
+    
+      <div id="slider" onclick="pauseAudio()">
+        <div class="slides">
+          <img src="img/img1.jpg" width="100%" class="img1" />
+         </div>
+      
+          <div class="slides">
+          <img src="img/img2.jpg" width="100%"  class="img1" />
+        </div>
+      
+          <div class="slides">
+          <img src="img/img6.jpg" width="100%"  class="img1" />
+        </div>
+        <div class="slides">
+          <img src="img/img5.jpg" width="100%"  class="img1" />
+        </div>
+        <div class="slides">
+          <img src="img/img6.jpg" width="100%"  class="img1" />
+        </div>
+      
+        
+          <div id="dot"><span class="dot"></span><span class="dot"></span><span class="dot"></span><span class="dot"></span><span class="dot"></span></div>
+         </div>
+      
+      
+         <script type="text/javascript">
+            var index = 0;
+            var slides = document.querySelectorAll(".slides");
+            var dot = document.querySelectorAll(".dot");
+            
+            function changeSlide(){
+            
+              if(index<0){
+                index = slides.length-1;
+              }
+            
+              if(index>slides.length-1){
+                index = 0;
+              }
+            
+              for(let i=0;i<slides.length;i++){
+                slides[i].style.display = "none";
+                dot[i].classList.remove("active");
+              }
+            
+              slides[index].style.display= "block";
+              dot[index].classList.add("active");
+            
+              index++;
+            
+              setTimeout(changeSlide,2000);
+            
+            }
+            
+            changeSlide();
+            </script>
+
+
+
+
+
+                                  </div>  
+
+
+
+
+                                 
+                              
+                              
+                              
+                              
+                              
+                                   
+                              
+                                                  <div class="secondpart" onclick="pauseAudio()">
+                                
+                                                    <div class="second1">
+                                                               <div  class="system" style="padding-left:16px;font-weight: bold;">
+                                                        <h2> <span>STUDENT INFORMATION  MANAGEMENT SYSTEM</span>  <img src="img/SIMS.png" style="height: 100px; width: 100px; border-radius: 40%;margin-left: 50px;" ></h2>
+                                                      
+                                                       
+                                                      </div> 
+                                                      <p class="paragraph" style="color: rgb(32, 28, 3);font-size: 18px;
+                                                      padding: 15px;"><marquee direction="up" scrolldelay="200"scrollamount=10  height=170  >
+                                                        
+                                                        A Student Management System is also known as a Student Information System (SIS).
+                                                         These systems work to coordinate scheduling and communications between faculty regarding students.
+                                                         Faculty members and parents need to have consistent information as to what their kid’s schedule is.
+                                                          Both field trips and academic study schedules help parents understand what’s going on. 
+                                                          This information is beneficial at the preschool and college levels. 
+                                                           This system exists to simplify information tracking for both parents and administrative staff.
+                                                                  
+                                                                  
+                                                                        
+                                                                  
+                                                                  </marquee></p>
+                                                    
+                                                                 
+                                                    
+                                                    
+                                                    
+                                                                </div>
+                                                    </div>
+                              
+                              
+                              
+                              
+                              
+                              
+                              
+                                                    
+                              
+                              
+                              
+                              
+                                                  
+                              <center>
+                                <div  style="height: auto;width: 90%; box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);">
+                                <p  class="paa" style="font-size: 35PX; color: red; margin-top: 10px;   align-items: center;padding: 50px;"> WHAT'S BUZZING @SMS</p>
+                              
+                              
+                                <div style="text-align:center">
+                                  <span class="dot"></span> 
+                                  <span class="dot"></span> 
+                                  <span class="dot"></span> 
+                                  <span class="dot"></span> 
+                                  <span class="dot"></span> 
+                                  <span class="dot"></span> 
+                                  <span class="dot"></span> 
+                                  <span class="dot"></span> 
+                                  <span class="dot"></span> 
+                                </div>
+                                
+                                
+                                  <div class="clockk"  style="height: 350px; width: 305px; border:  1px solid red;margin-top: 50px;margin-right: 10px;">
+                                    <div style="height: 100px; background-color: red;"  >
+                                    
+                                    
+                                    
+                                      <div class="datetime">
+                                        <div class="date">
+                                          <span id="dayname">Day</span>,
+                                          <span id="month">Month</span>
+                                          <span id="daynum">00</span>,
+                                          <span id="year">Year</span>
+                                        </div>
+                                        <div class="time">
+                                          <span id="hour">00</span>:
+                                          <span id="minutes">00</span>:
+                                          <span id="seconds">00</span>
+                                          <span id="period">AM</span>
+                                        </div>
+                                      </div>
+                                    
+                                    
+                                    
+                                    </div>
+                                  
+                                  
+                                  <div style="width: aoto; height: 170px; background-image: url(img/side1.jpg);" ><center> <a  style="color: gold;font-size: 22px;margin-top: 100px;"  href="performancebanipur.php"> <button style="margin-top: 80px ; background-color: gold; color: #10101E;
+                                    font-size: 15px;">TEACHERS PERFORMANCE</button>   
+                                         
+                                  </a></center></div>
+                                  
+                                  
+                                   
+                                  
+                                  
+                                  
+                                  
+                                  
+                                  
+                                  </div>
+                                 
+                                
+                                
+                                
+                                
+                                
+                        
+                              
+                                
+                                
+                                
+                              
+                                   
+                              
+                                    </div></center>
+                                 
+                                 
+                                    <br><br>
+                                     
+                                     
+                              
+                              
+                                  
+
+    </section>
+    <!-- Script -->
+    <script src="script.js"></script>
+  </body>
+</html>

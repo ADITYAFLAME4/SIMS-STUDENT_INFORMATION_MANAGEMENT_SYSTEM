@@ -1,0 +1,108 @@
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.container{
+    justify-content: center;
+    display: flex;
+    border: 2px solid black;
+    max-width: 500px;
+    width: 100%;
+    background-color: aliceblue;
+    margin: 20px auto;
+    padding: 30px;
+    box-shadow: 5px 5px 5px rgba(0,0,0,0.5);
+}
+.back{
+    width: 100px;
+    height: 25px;
+    background-color: aqua;
+    font-size: 15px;
+
+}
+.container .title{
+    font-size: 24px;
+    font-weight: 700;
+    margin-bottom: 25px;
+    color: deeppink;
+    text-transform: uppercase;
+    text-align: center;
+}
+.container .form .input_field{
+    margin-bottom: 15px;
+    display: flex;
+    align-items: center;
+}
+.container .form .input_field label{
+    width: 200px;
+    margin-right: 10px;
+    font-size: 17px;
+    font-style: oblique;
+}
+.container .form .input_field .input,
+.container .form .input_field .textarea{
+    width: 100%;
+    outline: none;
+    border: 1px solid purple;
+    font-size: 15px;
+    padding: 8px 10px;
+    border-radius: 4px;
+    transition: all 0.5s ease;
+
+}
+.container .form .input_field .selectbox{
+    position: relative;
+    width: 100%;
+    height: 40px;
+    border: 1px solid purple;
+
+}
+.container .form .input_field .selectbox select{
+    border: 1px solid purple;
+}
+.container .form .input_field .selectbox::before{
+    content: "";
+    position: absolute;
+}
+.container .form .input_field.input:focus-visible,
+.container .form .input_field.textarea:focus-visible{
+    border: 5px solid rgb(241, 241, 24);
+}
+.container .form .input_field p{
+    font-size: 14px;
+    
+}
+.container .form .input_field .check{
+    width: 15px;
+    height: 15px;
+    position: relative
+;
+display: block; cursor: pointer;
+}
+ .btn{
+    padding: 8px 10px;
+    width: 100%;
+    font-size: 15px;
+    border: 2px solid red;
+    color: black;
+    background-color: cornflowerblue;
+    position:relative;
+    cursor: pointer;
+    border-radius: 5px;
+    
+}
+.btn:hover{
+    background:purple;
+}
+.input:hover{
+    background:rgb(226, 217, 226);
+}
+@media(max-width:420px){
+    .container .form .input_field{
+        flex-direction: column;
+        align-items: flex-start;
+        
+    }
+}

@@ -1,0 +1,337 @@
+<?php
+
+require 'connect.php';
+
+ ?>
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>TECHNO ENGINEERING COLLEGE BANIPUR </title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" type="text/css" href="css/demo.css" />
+      <link rel="stylesheet" type="text/css" media="screen" href="style.css" />
+
+    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN"
+
+        crossorigin="anonymous">
+
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+    integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+    <!-- Font Awesome Icons -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
+    <!-- Google Fonts -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@600;700&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="style.css" />
+<style>
+     .body1 {
+  
+  background-image: url("../img/bani.jpg");
+
+
+  background-position: center center;
+  background-repeat: no-repeat;
+
+  background-size: cover;
+
+     }
+  body{
+    background-color: #fffefa;
+  }
+</style>
+  </head>
+  <body>
+    <header>
+      <nav style="color:rgb(255, 247, 246);">
+        <a href="#home" id="logo" style="font-size: 28px;">TECHNO ENGINEERING COLLEGE BANIPUR </a>
+        <i class="fas fa-bars" id="ham-menu"></i>
+        <ul id="nav-bar" >
+   
+          <li>
+            <a href="https://www.tecb.edu.in/about"  style="color:rgb(255, 255, 255); font-size: 25px;">About</a>
+          </li>
+          <li>
+            <a href="https://www.tecb.edu.in/contact"  style="color:rgb(250, 250, 250); font-size: 25px;">Contact</a>
+          </li>
+          
+          
+          <li>
+            <a href="../index.php"  style="color:#fffefa; font-size: 25px;">sign in</a>
+          </li>
+          <li>
+            <a href="https://www.technoindiagroup.com/" ><img src="../img/t.png" alt="Avatar" style="width:45px;  border-radius: 50%;"></a>
+          </li>
+          <li>
+            <a  href="http://makautexam.net/"><img src="../img/makaut.png" alt="Avatar" style="width:45px;  border-radius: 50%;"></a>
+          </li>
+          <li>
+            <a href="#contact"><i class='fas fa-volume-up' style='font-size:32px;color:rgb(19, 1, 1)' onclick="playAudio()" class="song"></i></a>
+          </li>
+                
+    <audio id="myAudio">
+      <source src="song.mp3" type="audio/ogg">
+    
+    
+    </audio><script>
+    var x = document.getElementById("myAudio"); 
+    
+    function playAudio() { 
+      x.play(); 
+    } 
+    
+    function pauseAudio() { 
+      x.pause(); 
+    } 
+    </script>
+        </ul>
+      </nav>
+    </header>
+
+
+
+    
+    <section id="home">
+
+
+      <div  style="width: auto;height: 600px;" class="body1">
+      <div class="eeee" style="margin-top: 100px;">
+
+
+        <div  class="system" style="padding-left:16px;font-weight: bold;">
+         
+    
+   
+                      </div>
+
+                    </div>
+
+                    <div class="secondpart" onclick="pauseAudio()">
+  
+                      <div class="second1">
+                                 <div  class="system" style="padding-left:16px;font-weight: bold;">
+                          <h2> <span>STUDENT INFORMATION  MANAGEMENT SYSTEM</span>  <img src="../img/SIMS.png" style="height: 100px; width: 100px; border-radius: 40%;margin-left: 50px;" ></h2>
+                        
+                         
+                        </div> 
+                        <p class="paragraph" style="color: rgb(32, 28, 3);font-size: 18px;
+                        padding: 15px;"><marquee direction="up" scrolldelay="200"scrollamount=10  height=170  >
+                          
+                          A Student Management System is also known as a Student Information System (SIS).
+                           These systems work to coordinate scheduling and communications between faculty regarding students.
+                           Faculty members and parents need to have consistent information as to what their kid’s schedule is.
+                            Both field trips and academic study schedules help parents understand what’s going on. 
+                            This information is beneficial at the preschool and college levels. 
+                             This system exists to simplify information tracking for both parents and administrative staff.
+                                    
+                                    
+                                          
+                                    
+                                    </marquee></p>
+                      
+                                   
+                      
+                      
+                      
+                                  </div>
+                                  
+                      </div>
+                      <CENTER>
+                      <div  class="noticee" style="height:200px; width:320px ;  background-color: rgba(22, 13, 13, 0.692);
+                      transition: all 0.3s ease-in;
+                      overflow-y: hidden; display: block;border-radius: 10%;">
+                     
+             
+               
+               
+               
+             
+               <CENter>
+               <div style="height: 20px; width: 100px; background-color: yellow; color: #10101E; font-size: 15PX;">NOTICE</div>
+               </CENter>
+               
+                
+                                     <marquee scrollamount=6  height="180" direction="up" style="color:gold;">
+                                      
+                                  <?php 
+                                  
+                                   $query="SELECT* FROM notice1"; $data= mysqli_query($con,$query);
+                                  
+                                   $total= mysqli_num_rows($data);
+                                  
+                                  while( $result=mysqli_fetch_assoc($data))
+                                     {
+                                      echo" <center><B><div> <i class='fas fa-caret-right' style='font-size:25px;color:red'></i>$result[subject]<br></div></B></center>
+                                                 
+                                                  <br><br>
+                                  ";
+                                  
+                                  }
+                                   
+                                   
+                                  ?> </marquee>
+                
+               
+               
+             </div>   </CENTER>
+                    
+<center>
+  <div  style="height: auto;width: 90%; box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);">
+  <p  class="paa" style="font-size: 35PX; color: red; margin-top: 10px;   align-items: center;padding: 50px;"> WHAT'S BUZZING @SMS</p>
+
+
+  <div class="cards">
+  
+    <div class="services">
+       <div class="content content-1" style=" background-image: url(../img/student.jpg); ">
+         
+          <h2>
+             Student Management
+          </h2>
+          <p>
+            These systems work to coordinate scheduling and communications between faculty regarding students.
+          </p>
+        </div>
+
+
+
+       <div class="content content-2" style=" background-image: url(../img/teacher.1jpg.jpg); ">
+       
+          <h2>
+            Teacher Management
+          </h2>
+          <p>
+            These systems work to coordinate scheduling and communications between faculty regarding Teachers.
+          </p>
+          
+       </div>
+
+
+
+
+       <div class="content content-3" style=" background-image: url(../img/attendence1.jpg); ">
+     
+          <h2>
+            Attendence Management 
+          </h2>
+          <p>
+            These systems work to coordinate scheduling and attendence between faculty regarding students.
+          </p>
+        
+       </div>
+
+    
+    </div>
+    
+    <div class="services">
+      <div class="content content-1" style=" background-image: url(../img/library.jpg); ">
+        
+         <h2>
+            Library Management
+         </h2>
+         <p>
+          These systems work to coordinate library recording and communications between faculty regarding students.
+         </p>
+       </div>
+
+
+
+      <div class="content content-2" style=" background-image: url(../img/result.jpg); ">
+      
+         <h2>
+            Result Management
+         </h2>
+         <p>
+          These systems work to coordinate result generates and communications between faculty regarding students's results.
+         </p>
+         
+      </div>
+
+
+
+
+      <div class="content content-3" style=" background-image: url(../img/Subject-combination.jpg); ">
+    
+         <h2>
+           Subject Management 
+         </h2>
+         <p>
+          These systems work to coordinate recording and communications between faculty regarding students.
+         </p>
+       
+      </div>
+
+   
+   </div>
+
+ 
+
+
+
+
+
+
+</div>
+</center>
+
+<center>
+
+  <div onclick="pauseAudio()" style="height: 500px;width: 80%;background-color: rgb(255, 255, 255);  box-shadow: 0 19px 38px rgba(243, 241, 241, 0.3), 0 15px 12px rgba(187, 178, 178, 0.22);margin-top: 100px;"  class="middle2">
+   
+   
+  
+  
+  
+ <br>
+<div class="pa" onclick="pauseAudio()">
+    <p > INTENSION</p></div>
+  <div class="aab"><img src="../img/consult.jpg" style="margin-top: 40px; width:90%; height:70% ;box-shadow: 0 19px 38px rgba(240, 234, 234, 0.3), 0 15px 12px rgba(241, 234, 234, 0.22);" alt=""></div>
+  <div class="part-c"> <p style="font-size: 25px; font-weight: bold;margin-top: 30px;  color: red;">
+  WE WANT TO BE A PART OF YOUR GROWTH
+  </p><br>
+  <p style="color: gold; font-size: 12px;padding: 20px;" class="consulty"> Consultancy is an integral part of Techno India Group: our elite faculty members and renowned experts have been carrying forward 32+ glorious years of expertise in the field of academics for guiding innumerable students.
+  
+  We are extremely proud of our vibrant alumni base who have proved their mettle over time across premier MNCs since the past few decades. As an academic group that believes in imparting quality education, Techno India exploits the industry experience of our alumni and utilizes their exposure to corporate assignments in framing the academic curricula.
+  <br><br>  
+  
+  <a href="topbar/unitg.HTML"><button style="background-color: red;  height: 35px;">READ MORE</button></a></p></div>
+  </div>
+
+
+
+  </center>
+  
+  
+  
+
+     
+
+      
+   
+   
+      <br><br>
+       
+       <center>
+       
+         
+     <img  class="footer1"src="../img/15.jpg" >
+     </div>
+       </div>
+      </center>
+
+
+    </section>
+    <!-- Script -->
+    <script src="script.js"></script>
+  </body>
+</html>
