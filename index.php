@@ -199,7 +199,7 @@ nav ul.active {
   color:red;
    font-size: 36px;
    font-family: 'Times New Roman';
-   padding-left: 10px;
+   padding-left: 11px;
    margin-top: 9%;
    letter-spacing: 2px;
 
