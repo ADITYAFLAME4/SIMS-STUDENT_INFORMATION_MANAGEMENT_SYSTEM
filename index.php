@@ -197,7 +197,7 @@ nav ul.active {
      
   scrollbar-color: red;
   color:red;
-   font-size: 35px;
+   font-size: 36px;
    font-family: 'Times New Roman';
    padding-left: 10px;
    margin-top: 9%;
