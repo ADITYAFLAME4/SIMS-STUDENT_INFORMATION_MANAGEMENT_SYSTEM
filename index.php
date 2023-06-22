@@ -205,18 +205,6 @@ nav ul.active {
    letter-spacing: 2px;
 
 }
-/* New H3 Tag for heading*/
-.system h3{
-     
-     scrollbar-color: red;
-     color:red;
-      font-size: 36px;
-      font-family: 'Times New Roman';
-      padding-left: 11px;
-      margin-top: 9%;
-      letter-spacing: 2px;
-   
-   }
 
 @media only screen and (max-width:500px) {
    
