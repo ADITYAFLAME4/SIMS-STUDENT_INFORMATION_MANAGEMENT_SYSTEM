@@ -115,7 +115,7 @@ nav ul a {
   font-weight: 600;
 }
 nav ul a:hover {
-  border-bottom: 2px solid #ffffff;
+  border-bottom: 2.0px solid #ffffff;
 }
 section#home {
   height: 100vh;
@@ -192,6 +192,7 @@ nav ul.active {
 }
 
 
+/* New H2 Tag for heading*/
   
 .system h2{
      
